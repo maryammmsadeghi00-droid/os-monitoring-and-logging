@@ -1,47 +1,23 @@
 {
-  "projectname": "Windows vs Linux OS Security",
-  "category": "OS Security Comparison",
+  "projectname": "Monitoring & Logging in Operating Systems",
+  "category": "Monitoring & Logging (DevOps/SecOps)",
   "author": "Maryam alsadat mirmohammadsadeghi",
   "student_no": "2320165017",
   "version": "1.0.0",
-  "description": "A comparative study of security mechanisms in Windows and Linux operating systems with practical scripts for user/permission management, kernel security, and update/patch management.",
-  "topics": [
-    "User & Permission Management",
-    "Kernel Security",
-    "Update & Patch Management"
+  "description": "Cross-platform service monitoring and log reporting tool for Linux (systemd/journalctl) and Windows (Services/Event Log) with alerts for critical services.",
+  "features": [
+    "Show service status (active/inactive)",
+    "Filter logs (error, warning)",
+    "Alert when critical services stop"
   ],
   "structure": {
-    "windows": "PowerShell scripts for Windows security analysis",
-    "linux": "Bash scripts for Linux security analysis"
-  },
-  "scripts": {
-    "windows": [
-      "windows/user_permission.ps1",
-      "windows/kernel_security.ps1",
-      "windows/update_patch.ps1"
-    ],
-    "linux": [
-      "linux/user_permission.sh",
-      "linux/kernel_security.sh",
-      "linux/update_patch.sh"
-    ]
-  },
-  "how_to_run": {
-    "windows": [
-      "powershell -ExecutionPolicy Bypass -File .\\windows\\user_permission.ps1",
-      "powershell -ExecutionPolicy Bypass -File .\\windows\\kernel_security.ps1",
-      "powershell -ExecutionPolicy Bypass -File .\\windows\\update_patch.ps1"
-    ],
-    "linux": [
-      "chmod +x linux/*.sh",
-      "./linux/user_permission.sh",
-      "./linux/kernel_security.sh",
-      "./linux/update_patch.sh"
-    ]
+    "windows": "Windows monitoring script(s) using Python + PowerShell",
+    "linux": "Linux monitoring script(s) using Python with systemd/journalctl",
+    "docs": "Demo video and documentation"
   },
   "requirements": {
-    "windows": "Windows 10/11 + PowerShell 5+ (Run as Administrator recommended for some checks)",
-    "linux": "Linux (Ubuntu/Debian/CentOS) + bash"
+    "windows": "Windows 10/11 + PowerShell 5+ + Python 3.10",
+    "linux": "Ubuntu 22.04+ + systemd + Python 3.10"
   },
   "repository": "https://github.com/maryammmsadeghi00-droid/windows-vs-linux-os-security"
 }
