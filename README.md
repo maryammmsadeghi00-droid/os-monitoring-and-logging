@@ -14,3 +14,13 @@ security mechanisms in Windows and Linux operating systems.
 
 ## Author
 Student Project – OS Security
+
+---
+
+## How to Run (Local Test)
+
+### Windows (PowerShell)
+1. Open **PowerShell** as Administrator.
+2. Navigate to the project directory:
+   ```powershell
+   cd "PATH_TO_PROJECT"
