@@ -24,3 +24,24 @@ Student Project – OS Security
 2. Navigate to the project directory:
    ```powershell
    cd "PATH_TO_PROJECT"
+3. Run the scripts:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\windows\user_permission.ps1
+powershell -ExecutionPolicy Bypass -File .\windows\kernel_security.ps1
+powershell -ExecutionPolicy Bypass -File .\windows\update_patch.ps1
+
+---
+
+### Linux (Bash)
+
+1. Open Terminal.
+2. Navigate to the project directory:
+```bash
+cd /path/to/project
+3. Make scripts executable:
+```bash
+chmod +x linux/*.sh
+./linux/user_permission.sh
+./linux/kernel_security.sh
+./linux/update_patch.sh
